@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BarlowCondensed-Light.ttf">
+            <string>BarlowCondensed-Light</string>
+        </array>
+        <array key="BarlowCondensed-Medium.ttf">
+            <string>BarlowCondensed-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="KGk-i7-Jjw" customClass="ReviewTableViewCell" customModule="Letsdetour" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-mE-Of6">
+                        <rect key="frame" x="12" y="8" width="296" height="147"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_default_user" translatesAutoresizingMaskIntoConstraints="NO" id="Tx0-5n-CFI">
+                                <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1u2-uP-yDE"/>
+                                    <constraint firstAttribute="height" constant="60" id="dDt-A8-XqO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aie-zd-xmo">
+                                <rect key="frame" x="74" y="20" width="210" height="19"/>
+                                <fontDescription key="fontDescription" name="BarlowCondensed-Medium" family="Barlow Condensed Medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRE-rb-gsg">
+                                <rect key="frame" x="76" y="41" width="216" height="17"/>
+                                <fontDescription key="fontDescription" name="BarlowCondensed-Light" family="Barlow Condensed Light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGY-h2-tnC" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="12" y="76" width="120" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="V6D-Uv-Qzd"/>
+                                    <constraint firstAttribute="width" constant="120" id="nAm-ig-bVk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haM-Ve-UAf">
+                                <rect key="frame" x="12" y="104" width="272" height="31"/>
+                                <fontDescription key="fontDescription" name="BarlowCondensed-Light" family="Barlow Condensed Light" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sRE-rb-gsg" firstAttribute="leading" secondItem="Tx0-5n-CFI" secondAttribute="trailing" constant="8" id="7HX-xg-sji"/>
+                            <constraint firstItem="haM-Ve-UAf" firstAttribute="leading" secondItem="sdn-mE-Of6" secondAttribute="leading" constant="12" id="9sa-zr-5Za"/>
+                            <constraint firstAttribute="trailing" secondItem="haM-Ve-UAf" secondAttribute="trailing" constant="12" id="A74-C7-1Ls"/>
+                            <constraint firstAttribute="bottom" secondItem="haM-Ve-UAf" secondAttribute="bottom" constant="12" id="DKB-LU-NO2"/>
+                            <constraint firstItem="Tx0-5n-CFI" firstAttribute="top" secondItem="sdn-mE-Of6" secondAttribute="top" constant="8" id="Fqn-xM-Stg"/>
+                            <constraint firstAttribute="trailing" secondItem="sRE-rb-gsg" secondAttribute="trailing" constant="4" id="Gyg-62-BIK"/>
+                            <constraint firstItem="Aie-zd-xmo" firstAttribute="top" secondItem="sdn-mE-Of6" secondAttribute="top" constant="20" id="OEw-C9-bSn"/>
+                            <constraint firstItem="sRE-rb-gsg" firstAttribute="top" secondItem="Aie-zd-xmo" secondAttribute="bottom" constant="2" id="OkK-dG-7cp"/>
+                            <constraint firstAttribute="trailing" secondItem="Aie-zd-xmo" secondAttribute="trailing" constant="12" id="Xay-kg-mjz"/>
+                            <constraint firstItem="Tx0-5n-CFI" firstAttribute="leading" secondItem="sdn-mE-Of6" secondAttribute="leading" constant="8" id="eM5-Uk-n4B"/>
+                            <constraint firstItem="DGY-h2-tnC" firstAttribute="leading" secondItem="sdn-mE-Of6" secondAttribute="leading" constant="12" id="hlm-Kh-G6u"/>
+                            <constraint firstItem="Aie-zd-xmo" firstAttribute="leading" secondItem="Tx0-5n-CFI" secondAttribute="trailing" constant="6" id="mrp-Vn-sVA"/>
+                            <constraint firstItem="haM-Ve-UAf" firstAttribute="top" secondItem="DGY-h2-tnC" secondAttribute="bottom" constant="8" id="nUS-LY-Dej"/>
+                            <constraint firstItem="DGY-h2-tnC" firstAttribute="top" secondItem="Tx0-5n-CFI" secondAttribute="bottom" constant="8" id="qDP-3F-0iC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="3 color border"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sdn-mE-Of6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="HCQ-3n-Ddq"/>
+                    <constraint firstAttribute="trailing" secondItem="sdn-mE-Of6" secondAttribute="trailing" constant="12" id="Mh1-s3-Xzq"/>
+                    <constraint firstItem="sdn-mE-Of6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ngw-2p-8o3"/>
+                    <constraint firstAttribute="bottom" secondItem="sdn-mE-Of6" secondAttribute="bottom" constant="8" id="tGV-M1-TWz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgUser" destination="Tx0-5n-CFI" id="kD4-Kx-DCe"/>
+                <outlet property="lblComment" destination="haM-Ve-UAf" id="9oF-OM-mbz"/>
+                <outlet property="lblDetail" destination="sRE-rb-gsg" id="n3Q-kW-dBA"/>
+                <outlet property="lblName" destination="Aie-zd-xmo" id="jFa-Mr-YPC"/>
+                <outlet property="viewRate" destination="DGY-h2-tnC" id="Zqh-Rl-1Uj"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="108.14732142857143"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="DGY-h2-tnC">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_default_user" width="135" height="135"/>
+        <namedColor name="3 color border">
+            <color red="0.69800001382827759" green="0.69800001382827759" blue="0.69800001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
